@@ -1,0 +1,181 @@
+1- var numero = Number(prompt("Digite um número: "));
+        if(numero % 2 == 0){
+            alert("par");
+        }else{
+            alert("impar");
+        }
+
+2 - var maiorNumero = 0;
+        for(let i = 1; i <= 3; i++){
+            let numero = Number(prompt(`Digite o ${i}º numero:`));
+            
+            if (numero > maiorNumero){
+                maiorNumero = numero;
+            }
+        }
+        alert(maiorNumero);
+
+3 - var media = 0;
+        var somaDasNotas = 0;
+        for(let i = 1; i <= 3; i++){
+            let numero = Number(prompt(`Digite a ${i}º nota:`));
+            
+            somaDasNotas += numero;
+        }
+
+        media = somaDasNotas / 3;
+        alert(media.toFixed(2));
+
+4 - var anoNasc = Number(prompt(`Digite o ano que nasceu: `));
+        while (anoNasc < 1900){
+            anoNasc = Number(prompt(`Digite um ano válido: `));
+        }
+        
+        var idade = 2024 - anoNasc;
+        alert(idade);
+
+5 -  var opcao = prompt("Digite 1) para converter para Celsius e 2) para Fahrenheit: ");
+
+
+        var Fahrenheit = 0;
+        var Celsius = 0;
+        switch(opcao){
+            case "1":
+                Celsius = prompt("Digite a temperatura em Celsius: ");
+                Fahrenheit = Celsius * 1.8 + 32;
+                alert(Fahrenheit.toFixed(2));
+                break;
+            
+            case "2":
+                Fahrenheit = prompt("Digite a temperatura em Fahrenheit: ");
+                Celsius = (Fahrenheit - 32) * 5/9;
+                alert(Celsius.toFixed(2));
+            default:
+                alert("Digito inválido! ")
+        }
+
+6 - var maiorNumero = 0;
+        var menorNumero = 0;
+        var resultado = 0;
+        for(let i = 1; i <= 2; i++){
+            let numero = Number(prompt(`Digite o ${i}º numero: `));
+            if (i == 1){
+                maiorNumero = numero;
+                menorNumero = numero;
+            }
+            if(numero > maiorNumero){
+                maiorNumero = numero;
+            }
+            if(menorNumero > numero){
+                menorNumero = numero
+            }
+
+            resultado = maiorNumero % menorNumero;
+
+            
+        }
+        if(resultado == 0){
+            alert(`Pelo menos um dos números é múltiplo do outro`);
+        }else{
+            alert('Nenhum dos números é múltiplo do outro')
+        }
+
+7 - var lado1 = Number(prompt("Digite o primeiro lado do triângulo: "));
+        var lado2 = Number(prompt("Digite o segundo lado do triângulo: "));
+        var lado3 = Number(prompt("Digite o terceiro lado do triângulo: "));
+
+        if (!lado1 + lado2 + lado3 > 180) {
+            alert("invalido")
+        } else {
+            if (lado1 == lado2 && lado1 == lado3) {
+                alert("equilatero");
+            } else if (lado1 == lado2 || lado1 == lado3) {
+                alert("isoceles");
+            } else if (lado1 != lado2 && lado1 != lado3) {
+                alert("escaleno");
+            }
+
+        }
+
+8 -var preco = 0;
+        var opcao = prompt("Escolha um dos pratos do menu: 1)pizza, 2)hambúrguer, 3)salada, 4)macarrão: ");
+
+        switch (opcao) {
+        case "1":
+            console.log("Pizza deliciosa com uma variedade de coberturas. Preço R$25.99");
+            break;
+        case "2":
+            descricao = console.log("Hambúrguer suculento com queijo, alface, tomate e molho especial. Preço R$12.99");
+            
+            break;
+        case "3":
+            descricao = console.log("Salada fresca com uma mistura de vegetais e molho balsâmico. Preço R$8.99");
+          
+            break;
+        case "4":
+            descricao = console.log("Macarrão al dente com molho de tomate e manjericão fresco. Preço R$10.99");
+            
+            break;
+        default:
+            descricao = "Prato não disponível no menu.";
+        }
+
+9 -   var altura = parseFloat(prompt("Digite sua altura em metros (por exemplo, 1.75):"));
+        var peso = Number(prompt("Digite seu peso em quilogramas:"));
+
+        var imc = peso / (altura * altura);
+
+        if (imc < 18.5) {
+            console.log("Abaixo do peso");
+        } else if (imc >= 18.5 && imc < 25) {
+            console.log("Peso normal");
+        } else if (imc >= 25 && imc < 30) {
+            console.log("Sobrepeso");
+        } else {
+            console.log("Obesidade");
+        }
+
+10 - var numero = prompt("escreva um numero positivo: ");
+
+        do {
+            if(numero % 2 == 0){
+                console.log(numero);
+            }
+
+            numero--;
+
+        } while (numero > 0);
+
+ 11 - var numero = prompt("escreva um numero positivo: ");
+
+        for(let i = 0; i <= numero; i++){
+            if (i % 2 == 1){
+                console.log(i);
+            }
+        }
+
+12 - var numero = prompt("Digite um número positivo para calcular o fatorial:");
+        var fatorial = 1;
+        for (let i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+    console.log(fatorial);
+
+13 - var numeroAleatorio = Math.floor(Math.random() * 101);
+        var numero = 0;
+        var tentativa =1;
+        console.log(numeroAleatorio);   
+
+        do {
+            numero = prompt(`${tentativa}ª tentativa. Tente adivinhar o numero: `);
+            tentativa++;
+            if(numero < numeroAleatorio){
+                console.log("tente um numero maior");
+            }else if(numero > numeroAleatorio){
+                console.log("tente um numero menor")
+            }else if (numero == numeroAleatorio){
+                console.log("Voçê acertou!")
+                break;
+            }
+
+        } while (tentativa <= 10);

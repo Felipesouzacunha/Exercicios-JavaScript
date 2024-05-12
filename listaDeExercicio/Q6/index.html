@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Execícios Lista 3</title>
+    <style>
+        div{
+            display: flex;
+        }
+
+        .im{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        .ma{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <img class="im" src="../imagens/adulto.jpg" alt="" onclick="muda('../imagens/adulto.jpg')">
+        <img class="im" src="../imagens/paisagem.jpg" alt="" onclick="muda('../imagens/paisagem.jpg')">
+        <img class="im" src="../imagens/crianca.webp" alt="" onclick="muda('../imagens/crianca.webp')">
+        
+        <div class="ma" id="ma"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+1 - uma variável é como se fossem gavetas que guardam as informções à ela atribuída. São necessária para organizar
+executar melhor o código
+
+2 - Tipagem dinâmica é uma caracteristica de algumas liguagens de programação que não exige que seja declarado o tipo
+da variável, diferente da Tipagem estática
+
+3 - é importante porque além de deixar o código mais orgainizado, possibilita identificar melhor onde está o errado, 
+caso haja
+
+4 - console.log("Boas vindaS");
+
+5 - var geralmente é usado para criar variáveis globais, let para variáveis locais, const depois de iniciada só pode
+se lida
+
+6 - var a = 1; var b = 1.5; console.log(typeof x); console.log(typeof y);
+
+7 - 
+var a = 1; /* declaração das variáveis
+var b = 1.5;   */
+
+console.log(typeof x); // number
+console.log(typeof y); // number
+
+8 - var nom = prompt("digite seu nome:"); console.log(nom);
+
+9 - var idade = prompt("digite sua idade:"); console.log(idade);
+
+10 - var nom = prompt("digite seu nome:"); var idade = prompt("digite sua idade:"); console.log(nom + " " + idade);
+
+11 - var str= prompt("Digeite um numero: "); var numero = parseInt(str); console.log(numero);
+
+12 - var alturaTexto = prompt("digite sua altura: "); var alturaFloat = parseFloat(alturaTexto); console.log(alturaFloat);
+
+13 - let idadeTexto = prompt("digite sua idade: "); let idadeNumber = Number(idadeTexto); console.log(idadeNumber);
+
+
+
