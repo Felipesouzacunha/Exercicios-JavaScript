@@ -1,0 +1,15 @@
+saída de dados:
+    console.log
+    docmente.write
+    alert
+
+entrada de dados:
+    prompt
+    imput
+
+manipulação de String
+    innerHTML
+    textContent
+    Number()
+    lenght
+    
